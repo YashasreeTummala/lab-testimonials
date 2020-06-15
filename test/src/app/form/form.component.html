@@ -1,0 +1,12 @@
+<div id="modelBox">
+  <div>
+    <label for="user-name">NAME:</label><br>
+    <input type="text" [(ngModel)]="newStudent.name">
+  </div>
+  <br>
+  <div>
+    <label for="user-experience">SHARE YOUR EXPERIENCE:</label><br>
+    <input type="text" class="textbox" [(ngModel)]="newStudent.experience">
+  </div>
+  <button (click)="addStudent(newStudent)">POST</button>
+</div>
